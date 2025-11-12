@@ -181,3 +181,5 @@ cython_debug/
 .cursorindexingignore# Large data files
 data/raw/*.csv
 data/raw/spotify-charts.csv
+data/raw/spotify-charts.csv
+data/raw/*.csv
