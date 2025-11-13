@@ -104,7 +104,3 @@ if __name__ == "__main__":
     merged_df = merge_datasets()
 
     print("\nMerge complete!")
-    print("\nNext steps:")
-    print("1. Start analysis (clustering, statistical tests)")
-    print("2. Create visualizations")
-    print("3. Build the React website")
