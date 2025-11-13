@@ -1,4 +1,5 @@
 import os
+from http.client import responses
 
 import spotipy
 from pydantic_core.core_schema import none_schema
@@ -34,13 +35,35 @@ def test_spotify_connection():
 
             print("Found track: {0} by {1}".format(track["name"], track["artists"][0]["name"]))
             print("Spotify ID: {0}".format(track_id))
+            print(f"Popularity: {track['popularity']}")
 
 
-            features = sp.audio_features([track_id])[0]
-            print(f"\nAudio features retrieved successfully!")
-            print(f"   Danceability: {features['danceability']}")
-            print(f"   Energy: {features['energy']}")
-            print(f"   Valence: {features['valence']}")
+            try:
+                track_info = sp.track(track_id)
+
+                audio_analysis_url = "https://api.spotify.com/v1/audio-features/{0}".format(track_id)
+                features_responses = sp._get(audio_analysis_url)
+
+                if features_responses:
+                    print(f"Danceability: {features_responses['danceability']:.3f}")
+                    print(f"Energy: {features_responses['energy']:.3f}")
+                    print(f"Valence: {features_responses['valence']:.3f}")
+                    print(f"Tempo: {features_responses['tempo']:.1f} BPM")
+                    print(f"Loudness: {features_responses['loudness']:.1f} dB")
+                    print(f"Acousticness: {features_responses['acousticness']:.3f}")
+
+                else:
+                    print("No audio features returned from Spotify API.")
+
+            except Exception as e:
+                print(e)
+                return None
+
+            # features = sp.audio_features([track_id])[0]
+            # print(f"\nAudio features retrieved successfully!")
+            # print(f"   Danceability: {features['danceability']}")
+            # print(f"   Energy: {features['energy']}")
+            # print(f"   Valence: {features['valence']}")
 
             return sp
         else:
