@@ -1,0 +1,7 @@
+Dataset Summary
+============================================================
+Billboard rows: 330087
+Billboard columns: ['date', 'rank', 'song', 'artist', 'last-week', 'peak-rank', 'weeks-on-board']
+
+Spotify rows: 26173514
+Spotify columns: ['title', 'rank', 'date', 'artist', 'url', 'region', 'chart', 'trend', 'streams']
