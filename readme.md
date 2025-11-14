@@ -1,8 +1,14 @@
 ## DS4200 Final Project - Music Streaming Analytics
 ## Project Overview
 
-This project analyzes music streaming trends using Spotify Charts data (2020-2024) combined with audio features and Billboard historical data. 
-The goal is to uncover patterns in global music consumption, regional preferences, and audio characteristics that drive popularity.
+This project analyzes music streaming patterns during the COVID-19 pandemic (2020-2021), examining how this unprecedented global event influenced music consumption across six regions (United States, United Kingdom, Brazil, Japan, India, and Global charts). By combining Spotify streaming data with audio features and historical Billboard charts, we explore:
+
+- How regional music preferences diverged or converged during the pandemic
+- Whether listeners gravitated toward more positive or negative music during lockdowns
+- Which genres gained or lost prominence during this period
+- How audio characteristics (energy, danceability, mood) evolved month-by-month
+- Comparison with pre-pandemic baseline trends from Billboard historical data
+
 NOTE: Spotify API is currently NOT being used. It doesn't need to be as our datasets do the job just fine. I have kept the file (spotify_api_setup.py) for refernce.
 
 ## Project Structure
