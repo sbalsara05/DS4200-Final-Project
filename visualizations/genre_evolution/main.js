@@ -9,7 +9,6 @@ d3.csv("../../data/visualizations/monthly_genre_trends.csv").then(data => {
 // grouping genres for each line
 const genres = d3.groups(data, d => d.macro_genre);
 
-
 let 
   width = 1000,
   height = 800;
@@ -57,12 +56,22 @@ svg.append('text')
     .text('Month')
     .style('text-anchor', 'middle')
 
+  
+    /*
+    
 svg.append('text')
   .attr('x', 0-height/2)
   .attr('y', 10)
-  .text('Count')
+  .text('Number of Songs')
   .style('text-anchor', 'middle')
   .attr('transform', 'rotate(-90)')
+  */
+
+  svg.append("text")
+  .attr("transform", `translate(${margin.left / 2}, ${height / 2}) rotate(-90)`)
+  .style("text-anchor", "middle")
+  .style("font-size", "14px")
+  .text("Number of Songs");
 
 //draw the line
 let line = d3.line()
