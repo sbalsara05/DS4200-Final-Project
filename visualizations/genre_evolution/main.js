@@ -57,7 +57,6 @@ svg.append('text')
     .style('text-anchor', 'middle')
 
   
-    /*
     
 svg.append('text')
   .attr('x', 0-height/2)
@@ -65,13 +64,7 @@ svg.append('text')
   .text('Number of Songs')
   .style('text-anchor', 'middle')
   .attr('transform', 'rotate(-90)')
-  */
 
-  svg.append("text")
-  .attr("transform", `translate(${margin.left / 2}, ${height / 2}) rotate(-90)`)
-  .style("text-anchor", "middle")
-  .style("font-size", "14px")
-  .text("Number of Songs");
 
 //draw the line
 let line = d3.line()
