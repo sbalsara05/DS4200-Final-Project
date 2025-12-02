@@ -20,7 +20,7 @@ let margin = {
   right:50
 }
 
-let svg = d3.select('body')
+let svg = d3.select('#d3chart')
             .append('svg')
             .attr('width', 1200)
             .attr('height', height)
@@ -57,6 +57,13 @@ svg.append('text')
     .style('text-anchor', 'middle')
 
   
+    svg.append('text')
+    .attr('x', width / 2)    
+    .attr('y', margin.top / 2) 
+    .attr('text-anchor', 'middle')
+    .style('font-size', '24px')
+    .style('font-weight', 'bold')
+    .text('Genre Evolution Over Time (2020-2021)');
     
 svg.append('text')
   .attr('x', 0-height/2)

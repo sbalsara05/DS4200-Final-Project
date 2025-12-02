@@ -1,7 +1,7 @@
 import pandas as pd
 import plotly.graph_objects as go
 
-df = pd.read_csv('/Users/ansha1/DS4200-Final-Project/data/visualizations/regional_audio_comparison.csv')
+df = pd.read_csv('../data/visualizations/regional_audio_comparison.csv')
 
 features = ['danceability', 'energy', 'valence', 'acousticness', 'tempo']
 df['tempo'] = df['tempo'] / 200
@@ -69,3 +69,4 @@ fig.update_layout(
 )
 
 fig.show()
+fig.write_html("../visualizations/mood.html")

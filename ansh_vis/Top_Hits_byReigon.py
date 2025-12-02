@@ -1,7 +1,7 @@
 import pandas as pd
 import altair as alt
 
-df = pd.read_csv('/Users/ansha1/DS4200-Final-Project/data/visualizations/top_tracks_by_region.csv')
+df = pd.read_csv('../data/visualizations/top_tracks_by_region.csv')
 
 df = df[df['streams'] > 0]
 df_top = df.groupby('region').apply(lambda x: x.nlargest(10, 'streams')).reset_index(drop=True)
@@ -29,4 +29,7 @@ chart = alt.Chart(df_top).mark_bar().encode(
     title='Top Hits by Region'
 )
 
-chart.show()
+chart
+
+chart.save("../visualizations/tophits.html")
+
