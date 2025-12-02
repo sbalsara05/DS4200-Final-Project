@@ -1,7 +1,7 @@
 import pandas as pd
 import plotly.express as px
 
-df = pd.read_csv('/Users/ansha1/DS4200-Final-Project/data/visualizations/mood_trends.csv')
+df = pd.read_csv('../data/visualizations/mood_trends.csv')
 df['month'] = pd.to_datetime(df['month'])
 
 df['mood'] = pd.Categorical(df['mood'], categories=['Negative', 'Neutral', 'Positive'], ordered=True)
@@ -64,3 +64,5 @@ fig.add_annotation(
 fig.update_traces(line=dict(width=0.5))
 
 fig.show()
+
+fig.write_html("../visualizations/moodTrends.html")
