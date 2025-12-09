@@ -10,8 +10,9 @@ d3.csv("./data/visualizations/monthly_genre_trends.csv").then(data => {
 const genres = d3.groups(data, d => d.macro_genre);
 
 let 
-  width = 1000,
-  height = 800;
+  width = 600,
+  height = 400;
+  legendWidth = 150;
 
 let margin = {
   top:50,
@@ -22,9 +23,9 @@ let margin = {
 
 let svg = d3.select('#d3chart')
             .append('svg')
-            .attr('width', 1200)
+            .attr('width', width + legendWidth)
             .attr('height', height)
-            .style('background', 'lightyellow')
+            .style('background', 'white')
 
 //define the scales
 let yScale = d3.scaleLinear()
@@ -61,7 +62,7 @@ svg.append('text')
     .attr('x', width / 2)    
     .attr('y', margin.top / 2) 
     .attr('text-anchor', 'middle')
-    .style('font-size', '24px')
+    .style('font-size', '20px')
     .style('font-weight', 'bold')
     .text('Genre Evolution Over Time (2020-2021)');
     
@@ -92,7 +93,7 @@ svg.selectAll(".genre-line")
 //creating legend for genres
 let legend = svg.append("g")
   .attr("class", "legend")
-  .attr("transform", `translate(${width - margin.right + 20}, ${margin.top})`);
+  .attr("transform", `translate(${width + 20}, ${margin.top})`);
 
   genres.forEach((d, i) => {
     let g = legend.append("g")
