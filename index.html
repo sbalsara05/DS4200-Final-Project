@@ -69,21 +69,45 @@
       </div>
     </div>
   </div>
+  <div class="row mb-5">
+    <div class="col-lg-8 mx-auto">
+      <div class="card shadow-sm">
+        <div class="card-body p-4">
+          <h2 class="h3 mb-3">References</h2>
+          <p>
+            NEED REFERENCES
+          </p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <h2>Visualizations</h2>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <h4 class="display-4 text-center my-4">Visualizations</h4>
+      </div>
+    </div>
   <hr/>
 
   <div class="row mb-5 p-4">
     <div class="col-12">
-      <h2 class="h3 mb-3">Genre Evolution Over Time</h2>
+      <h2 class="h3 mb-3">Static D3 Plot</h2>
         <div id="d3chart"></div>
       </div>
     </div>
     <div class="card shadow-sm ms-4" style="width: 75%;">
         <div class="card-body p-4">
-          <h4 class="h4 mb-3">Key Takeaway</h4>
+          <h4 class="h4 mb-3">Analysis:</h4>
           <p>
-            This graph...
+            This graph was created using d3 to visualize the evolution of music genres over the course of 2020 and 2021.
+            Each line represents a different genre, and the y-axis indicates the number of songs for that genre in a given month.
+            From this visualization, we can observe trends such as Pop consistently ranking as the 
+            most streamed genre. Furthermore, Pop music had a steady incline peaking around July of 2021
+            and then declining towards the end of 2021. A couple genres - R&B/Soul, Jazz/Blues, Country, 
+            Acoustic/Folk - had relatively low but stable streaming counts throughout the two years showing that these
+            genres were not as popular.
           </p>
         </div>
       </div>
@@ -96,7 +120,7 @@
 
   <div class="row mb-5 p-4">
     <div class="col-12">
-      <h2 class="h3 mb-3">Energy vs Mood</h2>
+      <h2 class="h3 mb-3">Interactive Altair Plot</h2>
           <iframe 
             src="visualizations/energyvsmood.html" 
             width="100%" 
@@ -105,12 +129,28 @@
             title="Energy vs Mood Visualization">
           </iframe>
     </div>
+    <div class="card shadow-sm ms-4" style="width: 75%;">
+        <div class="card-body p-4">
+          <h4 class="h4 mb-3">Analysis:</h4>
+          <p>
+            This graph was created using Altair to visualize the relationship between energy and mood (valence) of songs during 2020-2021.
+            Each point represents a song, with its position determined by its energy (x-axis) and mood (y-axis) scores.
+            From this visualization, we can observe that there is a positive correlation between energy and mood. 
+            The visualization shows that genres like Pop and Electronic/Dance have the highest energy and mood. 
+            In comparison, Acoustic/Folk has lower energy and mood. For the interaction,
+            hovering over points shows the track name, artist, genre, energy, valence. Additionally,
+            users can click on the different radio buttons to filter the songs by genre. 
+          </p>
+        </div>
+      </div>
   </div>
+  <hr/>
+
 
 
   <div class="row mb-5 p-4">
     <div class="col-12">
-      <h2 class="h3 mb-3">Top Hits by Region</h2>
+      <h2 class="h3 mb-3">Interactive Altair Plot</h2>
           <iframe 
             src="visualizations/tophits.html" 
             width="100%" 
@@ -119,12 +159,20 @@
             title="Top Hits by Region">
           </iframe>
     </div>
+    <div class="card shadow-sm ms-4" style="width: 75%;">
+        <div class="card-body p-4">
+          <h4 class="h4 mb-3">Analysis:</h4>
+          <p>
+            
+          </p>
+        </div>
+      </div>
   </div>
-
+  <hr/>
 
   <div class="row mb-5 p-4">
     <div class="col-12">
-      <h2 class="h3 mb-3">Regional Music Preference</h2>
+      <h2 class="h3 mb-3">Interactive Plot</h2>
           <iframe
             src="visualizations/mood.html"
             width="100%"
@@ -133,13 +181,21 @@
             title="Regional Music Preference">
           </iframe>
     </div>
-      
+    <div class="card shadow-sm ms-4" style="width: 75%;">
+        <div class="card-body p-4">
+          <h4 class="h4 mb-3">Analysis:</h4>
+          <p>
+         
+          </p>
+        </div>
+      </div>
   </div>
+  <hr/>
 
 
   <div class="row mb-5 p-4">
     <div class="col-12">
-      <h2 class="h3 mb-3">Mood Trends During Covid</h2>
+      <h2 class="h3 mb-3">Interactive Plot</h2>
           <iframe
             src="visualizations/moodTrends.html"
             width="100%"
@@ -149,7 +205,18 @@
           </iframe>
     </div>
   </div>
+  <br/>
+  <div class="card shadow-sm ms-4" style="width: 75%;">
+    <div class="card-body p-4">
+      <h4 class="h4 mb-3">Analysis:</h4>
+      <p>
+      </p>
+    </div>
+  </div>
 </div>
+<hr/>
+<br/>
+
 <div class="row mb-5">
     <div class="col-lg-8 mx-auto">
       <div class="card shadow-sm">
