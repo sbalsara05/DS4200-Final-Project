@@ -1,5 +1,5 @@
 
-d3.csv("../../data/visualizations/monthly_genre_trends.csv").then(data => {
+d3.csv("./data/visualizations/monthly_genre_trends.csv").then(data => {
 
   data.forEach(d => {
     d.count = +d.count;
