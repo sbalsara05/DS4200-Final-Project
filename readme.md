@@ -1,4 +1,5 @@
 ## DS4200 Final Project - Music Streaming Analytics
+## Claire Stewart, Ansh Aggarwal, Sohum Balsara
 ## Project Overview
 
 This project analyzes music streaming patterns during the COVID-19 pandemic (2020-2021), examining how this unprecedented global event influenced music consumption across six regions (United States, United Kingdom, Brazil, Japan, India, and Global charts). By combining Spotify streaming data with audio features and historical Billboard charts, we explore:
