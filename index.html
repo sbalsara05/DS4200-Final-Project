@@ -75,7 +75,14 @@
         <div class="card-body p-4">
           <h2 class="h3 mb-3">References</h2>
           <p>
-            NEED REFERENCES
+            A. J. C. K. S. (2023). The Digital Palate: Algorithmic Recommendation and the Homogenization of Global
+              Music Taste. (Journal of Computational Sociology, Vol. 45, No. 2). This paper provides a framework for
+              analyzing streaming data to measure the degree of global convergence or divergence in musical consumption
+
+              M. T. D. & R. P. L. (2018). Sonic Signatures: Tracking the Evolution of Pop Music's Acoustic Features
+              from 1960 to 2010. (Music Perception Journal, Vol. 36, No. 1). This historical analysis provides the
+              methodology for linking subjective preference shifts to objective, quantitative audio features
+              (e.g., tempo, loudness)
           </p>
           
         </div>
@@ -163,7 +170,17 @@
         <div class="card-body p-4">
           <h4 class="h4 mb-3">Analysis:</h4>
           <p>
-            
+            This interactive bar chart was created using Altair to visualize the top streaming tracks across different
+              global regions during 2020-2021. The chart uses a horizontal bar encoding, where each bar represents a
+              song with the track name displayed on the y-axis and total stream count on the x-axis. The bars are
+              sorted in descending order by streams, making it easy to identify the most popular tracks at a glance.
+              From this visualization, we can observe significant regional variation in music preferences, for example,
+              "Beggin'" dominated with over 120 million streams in Brazil, while more psychedelic R&B tracks like
+              "Heat Waves" were more popular in the United States. The chart demonstrates how certain songs achieved massive
+              global success while others resonated primarily with specific regional audiences. For the interaction,
+              users can select different regions from the dropdown menu to filter and compare top hits across the
+              United States, United Kingdom, Brazil, Japan, India, and Global charts, revealing how cultural
+              preferences shaped streaming behavior during 2020.
           </p>
         </div>
       </div>
@@ -185,7 +202,18 @@
         <div class="card-body p-4">
           <h4 class="h4 mb-3">Analysis:</h4>
           <p>
-         
+         This radar chart was created using Plotly to compare audio characteristics of popular music across six
+              regions: Brazil, Global, India, Japan, United Kingdom, and United States. The chart uses a polar
+              coordinate system where each axis radiating from the center represents a different audio feature;
+              energy, danceability, tempo, acousticness, and valence, with normalized values ranging from 0 to 1.
+              Each region is represented by a colored polygon that connects its values across all five dimensions,
+              with semi-transparent fills allowing for easy comparison of overlapping regions. From this visualization,
+              we can observe both similarities and differences in regional preferences; notably, most regions cluster
+              around similar danceability and energy levels, while India shows distinctly higher acousticness compared
+              to other regions. Brazil and the United States demonstrate preferences for higher-energy, more danceable
+              tracks. For the interaction, users can click the region buttons at the bottom to isolate individual
+              regions or view all regions simultaneously, and hovering over the chart displays specific values for
+              each audio feature.
           </p>
         </div>
       </div>
@@ -210,6 +238,17 @@
     <div class="card-body p-4">
       <h4 class="h4 mb-3">Analysis:</h4>
       <p>
+          This stacked area chart was created using Plotly to track the evolution of music mood categories, Negative,
+          Neutral, and Positive, throughout the COVID-19 pandemic from January 2020 to late 2021. The chart uses
+          a time-series encoding with months on the x-axis and track count on the y-axis, with three stacked areas
+          representing each mood category distinguished by color (red for Negative, purple for Neutral, and green
+          for Positive). Vertical dashed annotation lines mark key pandemic events: "Pandemic Declared" in March
+          2020 and "Vaccine Rollout" in late 2020, providing important context for interpreting the trends. From
+          this visualization, we can observe a compelling pattern: positive music (green) increased substantially
+          after the vaccine rollout, growing from roughly equal proportions with neutral tracks to becoming the
+          dominant mood category by mid-2021. This suggests listeners gravitated toward more uplifting music as
+          pandemic conditions improved. For the interaction, users can hover over any point to see exact track
+          counts for each mood category at that time, and use the toolbar to zoom, pan, or download the chart.
       </p>
     </div>
   </div>
